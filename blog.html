@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>공항 셔츠룸 블로그 | 인천공항 셔츠룸 첫 방문 꿀팁 대방출</title>
+    <meta name="description" content="인천공항 근처 셔츠룸 처음 가는 놈들 들어라. 형이 실제 경험담으로 알려주는 입문 가이드. 가격, 시스템, 후회 없는 선택까지 싹 다 까발림. 전화 010-6279-0862.">
+    <meta name="keywords" content="공항 셔츠룸 블로그, 인천공항 셔츠룸 첫방문, 셔츠룸 입문 가이드, 공항 셔츠룸 후기, 셔츠룸 꿀팁">
+    <link rel="canonical" href="https://t3b06-gh-shirts-list.vercel.app/blog">
+    <meta property="og:title" content="공항 셔츠룸 블로그 | 인천공항 셔츠룸 첫 방문 꿀팁 대방출">
+    <meta property="og:description" content="인천공항 근처 셔츠룸 처음 가는 놈들 들어라. 형이 실제 경험담으로 알려주는 입문 가이드. 가격, 시스템, 후회 없는 선택까지 싹 다 까발림. 010-6279-0862.">
+    <meta property="og:url" content="https://t3b06-gh-shirts-list.vercel.app/blog">
+    <meta name="robots" content="index, follow">
+    <style>
+        /* RESET */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        img, svg {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: #ff00ff;
+            text-decoration: underline wavy 2px;
+            text-underline-offset: 4px;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #00ffff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        /* TYPOGRAPHY */
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            text-transform: uppercase;
+            letter-spacing: -3px;
+            font-weight: 900;
+            color: #ff00ff;
+            text-shadow: 4px 4px 0 #00ffff, 8px 8px 0 #ff00ff;
+            margin-bottom: 1.5rem;
+            line-height: 0.9;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            text-transform: uppercase;
+            font-weight: 800;
+            border-left: 8px solid #ff00ff;
+            padding-left: 1rem;
+            margin: 2rem 0 1rem;
+            color: #00ffff;
+            text-shadow: 2px 2px 0 #ff00ff;
+        }
+
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 700;
+            margin: 1.5rem 0 0.5rem;
+            color: #ff00ff;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+        }
+
+        .mono {
+            font-family: 'Courier New', Courier, monospace;
+            background: #222;
+            padding: 0.2rem 0.5rem;
+            border: 1px dashed #ff00ff;
+        }
+
+        /* LAYOUT – full bleed */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 max(1rem, calc((100vw - 1200px) / 2));
+        }
+
+        section, header, footer {
+            padding: 2rem 0;
+            border-bottom: 4px solid #ff00ff;
+        }
+
+        header {
+            border-bottom: 6px double #00ffff;
+            padding: 1.5rem 0;
+        }
+
+        footer {
+            border-top: 4px solid #ff00ff;
+            border-bottom: none;
+            text-align: center;
+            padding: 2rem 0;
+            background: #111;
+        }
+
+        .section-gap {
+            margin: 3rem 0;
+        }
+
+        /* BORDERS & ACCENTS */
+        .brutal-border {
+            border: 4px solid #ff00ff;
+            padding: 1.5rem;
+            background: #111;
+            box-shadow: 8px 8px 0 #00ffff;
+            margin-bottom: 2rem;
+        }
+
+        .brutal-border--inverted {
+            border-color: #00ffff;
+            box-shadow: 8px 8px 0 #ff00ff;
+        }
+
+        .neon-text {
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+        }
+
+        /* NAV – present */
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background: #0a0a0a;
+            border-bottom: 2px solid #ff00ff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #ff00ff;
+            text-shadow: 2px 2px 0 #00ffff;
+            letter-spacing: -2px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: #e0e0e0;
+            text-decoration: none;
+            padding: 0.3rem 0.8rem;
+            border: 2px solid transparent;
+            transition: 0.2s;
+        }
+
+        nav ul li a:hover {
+            border-color: #ff00ff;
+            color: #ff00ff;
+            background: #111;
+        }
+
+        /* hamburger-menu (mobile) */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 2rem;
+            color: #ff00ff;
+            background: none;
+            border: none;
+            padding: 0.2rem;
+        }
+
+        /* responsive-768 */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                background: #0a0a0a;
+                border-top: 2px solid #ff00ff;
+                padding: 1rem 0;
+            }
+
+            nav ul.open {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            h1 {
+                letter-spacing: -1px;
+            }
+
+            .brutal-border {
+                padding: 1rem;
+            }
+        }
+
+        /* TEL LINK */
+        .tel-link {
+            display: inline-block;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #00ffff;
+            background: #ff00ff;
+            padding: 0.8rem 2rem;
+            border: 3px solid #fff;
+            text-decoration: none;
+            text-shadow: 2px 2px 0 #000;
+            margin-top: 1rem;
+            transition: 0.2s;
+        }
+
+        .tel-link:hover {
+            background: #00ffff;
+            color: #ff00ff;
+            border-color: #ff00ff;
+        }
+
+        /* blog specific */
+        .blog-post {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .blog-post .meta {
+            color: #888;
+            font-size: 0.9rem;
+            border-bottom: 1px dashed #ff00ff;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .blog-post blockquote {
+            border-left: 6px solid #00ffff;
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: #ccc;
+        }
+
+        .blog-post .highlight {
+            background: #222;
+            border: 2px solid #ff00ff;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .blog-post .emoji-big {
+            font-size: 2rem;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">셔츠룸 모음</div>
+        <button class="hamburger" onclick="toggleNav()" aria-label="메뉴 열기">☰</button>
+        <ul id="nav-menu">
+            <li><a href="/">홈</a></li>
+            <li><a href="/list">전체 목록</a></li>
+            <li><a href="/blog">블로그</a></li>
+            <li><a href="/contact">문의</a></li>
+        </ul>
+    </nav>
+
+    <header class="container">
+        <h1>셔츠룸 블로그</h1>
+        <p>인천공항 근처 셔츠룸, 처음 가는 너를 위한 <span class="mono">진짜 꿀팁</span> 대방출</p>
+    </header>
+
+    <main class="container section-gap">
+        <article class="blog-post">
+            <h2>🔥 인천공항 셔츠룸 첫 방문 <span class="emoji-big">가이드</span></h2>
+            <div class="meta">2025.03.15 | 조회 1,247 | 작성자: 공항셔츠형</div>
+
+            <p>야, 형. 인천공항 근처 셔츠룸 처음 가본다고? <strong>존나 잘 왔어.</strong> 형이 실제로 3년 동안 인천공항 근처 셔츠룸 20군데 이상 돌아다닌 경험으로 알려준다. 이 글 하나면 너도 더이상 호구 안 당한다.</p>
+
+            <div class="highlight">
+                <strong>📌 미리보기:</strong> 이 글에서 알 수 있는 것들<br>
+                - 셔츠룸 시스템 완벽 이해<br>
+                - 가격대별 특징 (초보 vs 고인물)<br>
+                - 첫 방문 때 하면 안 되는 실수 TOP3<br>
+                - 인천공항 주변 최고의 셔츠룸 추천 (내 돈 내고 간 곳만)
+            </div>
+
+            <h3>1️⃣ 셔츠룸 시스템, 이렇게 돌아간다</h3>
+            <p>처음 가면 "아니 여기가 왜 룸인데 옷을 입고 들어가지?" 이 생각부터 든다. ㅋㅋㅋ 근데 그게 정상이다. 셔츠룸은 <span class="mono">정장 입고 들어가서 술 마시고 노는 곳</span>인데, 중요한 건 <strong>아가씨들이 셔츠 입고 넥타이 맨다는 뜻</strong>이 아니야. (실제로는 비즈니스 캐주얼 입고 나오는 경우도 많음)</p>
+
+            <p>시스템은 이렇다: 입장 → 셔츠룸 지정 → 아가씨 라인업 → 선택 → 1차 (술/게임) → 2차 (선택적) → 마무리. <strong>1차는 무조건 술과 게임</strong> 위주고, 2차는 업소마다 다르니 꼭 물어봐라. 인천공항 근처 업소들은 보통 <span class="mono">준수한 편</span>이지만, 일부는 바가지 씌우는 곳도 있음.</p>
+
+            <blockquote>
+                "형이 처음 갔을 때, 아가씨한테 '넥타이 왜 안 맸어요?' 물어봤다가 ㅈㄴ 쪽팔렸다. 셔츠룸이라고 다 같은 복장이 아니야."
+            </blockquote>
+
+            <h3>2️⃣ 가격대별 특징 – 초보는 여기로 가라</h3>
+            <p>인천공항 근처 셔츠룸 가격은 크게 <strong>3단계</strong>로 나뉜다:</p>
+            <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
+                <li><strong>• 입문형 (20만 원대)</strong> – 깔끔한 기본. 아가씨들 서비스는 무난. 첫 방문에 강추. (예: <span class="mono">셔츠하우스</span> 브랜드)</li>
+                <li><strong>• 중급형 (30~40만 원대)</strong> – 분위기 좋음. 아가씨 비주얼 업. 게임 종류 다양. (예: <span class="mono">라운지쉑</span> 계열)</li>
+                <li><strong>• 고급형 (50만 원 이상)</strong> – VIP 스타일. 인테리어 미쳤고, 서비스도 세심. 다만 너무 비싸서 부담될 수 있음.</li>
+            </ul>
+            <p>초보는 <strong>입문형</strong>부터 가라. 돈 아깝지 않고 시스템 익히기 좋다. 형이 제일 처음 간 곳이 <span class="mono">공항 셔츠하우스</span>였는데, 지금도 가끔 들린다.</p>
+
+            <h3>3️⃣ 첫 방문 때 하면 안 되는 실수 TOP3</h3>
+            <p>이거 하나만 기억해라. <strong>실수하면 진짜 ㅈ됨.</strong></p>
+            <div class="brutal-border">
+                <p><strong>❌ 실수 1: 아가씨한테 너무 깝치지 마라.</strong><br>
+                "야! 나 돈 많아!" 이런 거 하지 마. 오히려 역효과. 적당히 친근하고 예의 바르게 대해야 괜찮은 서비스 받는다.</p>
+                <p><strong>❌ 실수 2: 가격 확인 안 하고 들어가지 마라.</strong><br>
+                "기본 20만 원이요~" 하면서 나중에 더 받는 경우 있음. <strong>입장 전에 총비용 물어보는 거</strong> 기본 매너다.</p>
+                <p><strong>❌ 실수 3: 2차 강요하지 마라.</strong><br>
+                셔츠룸의 2차는 선택사항. 강제로 하려다가 업소 블랙리스트 오를 수도 있음. 분위기 봐가면서 자연스럽게.</p>
+            </div>
+
+            <h3>4️⃣ 인천공항 근처 내가 직접 가본 셔츠룸 BEST 3</h3>
+            <p>돈 내고 경험한 곳만 적는다. 광고 아니다. <strong>찐 리뷰다.</strong
+</body>
+</html>
