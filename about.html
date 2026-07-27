@@ -2,154 +2,105 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="bpaas-design-system" content="brutalist-avantgarde">
-  <meta name="bpaas-design-theme" content="kr-neon-void">
-  <title>공항 셔츠룸 모음 | 정보</title>
-  <meta name="description" content="공항 셔츠룸 모음 사이트의 정보 페이지. 인천공항 근처 셔츠룸 특징, 이용 팁, 실제 후기 바탕으로 싹 다 정리. 전화 010-6279-0862.">
-  <meta name="keywords" content="공항 셔츠룸, 인천공항 셔츠룸, 셔츠룸 정보, 공항 셔츠룸 이용방법, 셔츠룸 가격">
-  <link rel="canonical" href="https://t3b06-gh-shirts-list.vercel.app/info">
-  <meta property="og:title" content="공항 셔츠룸 모음 | 정보">
-  <meta property="og:description" content="인천공항 근처 셔츠룸 정보 싹 다 모음. 실제 리뷰, 분위기, 가격까지 진짜 내 맘대로 까발림. 010-6279-0862">
+  <title>공항 셔츠룸 정보 — 상세 가이드</title>
+  <meta name="description" content="공항 셔츠룸 이용자를 위해 지역별 특징, 이용 흐름, 조건별 적합성을 심층적으로 안내합니다. 현장 선택 시 고려해야 할 기준을 전문적인 시각으로 정리했습니다.">
+  <meta name="keywords" content="공항 셔츠룸, 공항 셔츠룸 모음, 셔츠룸 이용 가이드, 공항 셔츠룸 비교, 공항 셔츠룸 조건">
+  <link rel="canonical" href="https://airport-shirt-trend.hardcoreroom.com/about.html">
+  <meta property="og:title" content="공항 셔츠룸 정보 — 상세 가이드">
+  <meta property="og:description" content="공항 셔츠룸 이용자를 위해 지역별 특징, 이용 흐름, 조건별 적합성을 심층적으로 안내합니다.">
+  <meta property="og:url" content="https://airport-shirt-trend.hardcoreroom.com/about.html">
   <meta property="og:type" content="website">
-  <style>
-    /* RESET */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { font-size: 16px; scroll-behavior: smooth; }
-    body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #0a0a0a; color: #f0f0f0; line-height: 1.6; }
-    img, svg { max-width: 100%; display: block; }
-    a { color: #ff3b6f; text-decoration: underline; text-underline-offset: 3px; }
-    a:hover { color: #ffb3c6; }
-    ul { list-style: none; padding-left: 0; }
-    /* TYPOGRAPHY */
-    h1 { font-size: 2.8rem; font-weight: 900; text-transform: uppercase; letter-spacing: -1px; color: #ff3b6f; text-shadow: 0 0 10px #ff3b6f44; }
-    h2 { font-size: 2rem; font-weight: 800; text-transform: uppercase; letter-spacing: -0.5px; border-left: 6px solid #ff3b6f; padding-left: 1rem; margin: 2rem 0 1.5rem; }
-    h3 { font-size: 1.4rem; font-weight: 700; color: #e0e0e0; margin-bottom: 0.5rem; }
-    p { margin-bottom: 1.2rem; }
-    .mono { font-family: 'Courier New', monospace; color: #ffb3c6; background: #1a1a1a; padding: 0.2rem 0.5rem; border: 1px solid #333; }
-    /* LAYOUT – full bleed */
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
-    section, header, footer { width: 100%; }
-    .section-gap { padding: 3rem 0; }
-    /* BORDERS & ACCENTS */
-    .card { background: #111; border: 2px solid #222; padding: 1.8rem; margin-bottom: 2rem; transition: border-color 0.3s; box-shadow: 8px 8px 0 #ff3b6f22; }
-    .card:hover { border-color: #ff3b6f; }
-    .btn-tel { display: inline-block; background: #ff3b6f; color: #0a0a0a; font-weight: 800; padding: 1rem 2.5rem; text-decoration: none; border: 2px solid #ff3b6f; transition: all 0.2s; margin-top: 1rem; }
-    .btn-tel:hover { background: transparent; color: #ff3b6f; box-shadow: 0 0 20px #ff3b6f; }
-    /* NAV */
-    nav { background: #000; padding: 1rem 0; border-bottom: 3px solid #ff3b6f; }
-    .nav-list { display: flex; gap: 2rem; justify-content: center; align-items: center; flex-wrap: wrap; }
-    .nav-list a { color: #f0f0f0; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; padding: 0.5rem 0; border-bottom: 2px solid transparent; }
-    .nav-list a:hover { border-bottom-color: #ff3b6f; }
-    /* hamburger (mobile) */
-    .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; background: none; border: none; padding: 0.5rem; }
-    .hamburger span { width: 28px; height: 3px; background: #f0f0f0; }
-    @media (max-width: 768px) {
-      .nav-list { display: none; flex-direction: column; width: 100%; text-align: center; gap: 0.5rem; padding: 1rem 0; }
-      .nav-list.active { display: flex; }
-      .hamburger { display: flex; }
-      h1 { font-size: 2rem; }
-    }
-    footer { border-top: 2px solid #222; padding: 2rem 0; text-align: center; color: #666; font-size: 0.85rem; }
-  </style>
+  <meta property="og:image" content="https://airport-shirt-trend.hardcoreroom.com/assets/og-image.jpg">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-        <div style="font-size:1.3rem; font-weight:800; color:#ff3b6f;">T3B06</div>
-        <button class="hamburger" aria-label="메뉴 열기">
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-list">
-          <li><a href="/">홈</a></li>
-          <li><a href="/info">정보</a></li>
-          <li><a href="/review">후기</a></li>
-          <li><a href="/location">위치</a></li>
-          <li><a href="tel:010-6279-0862" class="tel-link">전화문의</a></li>
+  <header class="k-box-c3fu">
+    <div class="k-wrap-5bb0">
+      <h1 class="m-card-v4cw">공항 셔츠룸 정보</h1>
+      <nav>
+        <ul class="nav-present">
+          <li><a href="/index.html">홈</a></li>
+          <li><a href="/overview.html">전체보기</a></li>
+          <li><a href="/info.html">정보</a></li>
+          <li><a href="/contact.html">문의</a></li>
         </ul>
-      </div>
-    </nav>
+        <button class="hamburger-menu" aria-label="메뉴 열기"></button>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="section-gap" style="padding-top:5rem;">
-      <div class="container">
-        <h1>공항 셔츠룸<br>진짜 정보</h1>
-        <p class="mono" style="margin:1.5rem 0 2rem;">/익스클루시브/ 브로가 직접 다녀온&nbsp;후기 기반</p>
-        <a href="tel:010-6279-0862" class="btn-tel">📞 바로 전화 걸기</a>
-      </div>
+  <main class="q-wrap-pa5u">
+    <section class="t-box-d2b4">
+      <h2>공항 셔츠룸 개념과 활용 가치</h2>
+      <p>공항 셔츠룸은 여행 전후 또는 대기 시간 동안 편안히 옷을 갈아입거나 정돈할 수 있는 전용 공간으로, 특히 장거리 비행 후 피로 회복과 비즈니스 복장 유지에 큰 도움이 됩니다. 공항 내 다양한 운영 주체가 제공하는 셔츠룸은 위치, 서비스 수준, 이용 요금 등에 따라 차별화되며, 이용자는 자신의 일정과 필요에 맞는 옵션을 선택해야 합니다.</p>
+      <p>전문가들은 셔츠룸을 단순 편의 시설이 아닌 ‘시간 관리 전략’의 핵심 요소로 강조합니다. 비행 전 사전 정돈을 통해 출발 시간을 단축하고, 비행 중 혹은 도착 후 신속히 업무 복장으로 전환함으로써 효율성을 극대화할 수 있습니다. 이러한 관점에서 셔츠룸 선택은 여행 비용과 직접적인 연관이 있는 만큼, 데이터 기반 판단이 요구됩니다.</p>
     </section>
 
-    <!-- INTRO -->
-    <section class="section-gap">
-      <div class="container">
-        <h2>왜 공항 셔츠룸인가?</h2>
-        <p>야, 너 인천공항 도착해서 시간 떠는 거 지루하지 않아? 나도 처음엔 '셔츠룸이 뭐 별거냐' 싶었는데, 막상 가보니까 분위기가 완전 다르더라. 공항 근처라 접근성도 좋고, 특히 늦은 밤에 비행기 기다리다가 가기 딱이야. 이 페이지는 실제 내가 발로 뛰고 전화해가며 모은 정보니까 믿어도 돼.</p>
-        <p>가격대? 서비스? 위치? 다 까발릴 거야. <span class="mono">커피 한 잔 값 생각하면 절대 아깝지 않음.</span> 단, 예약은 필수! 전화 한 통이면 모든 게 해결된다. <a href="tel:010-6279-0862">010-6279-0862</a> 여기로 바로 걸어.</p>
-      </div>
+    <section class="t-box-d2b4">
+      <h2>지역별 셔츠룸 특징</h2>
+      <p>대한민국 주요 국제공항은 각각 고유한 셔츠룸 운영 방식을 채택하고 있습니다. 인천공항은 국내외 프리미엄 라운지와 연계된 고급 셔츠룸을 제공하며, 예약 기반으로 사전 이용이 가능해 대기 시간을 최소화합니다. 김포공항은 국내선 중심의 간편 셔츠룸을 운영해, 짧은 대기 시간에 맞춘 빠른 이용 절차가 특징입니다.</p>
+      <p>제주공항과 부산김해공항은 지역 특성을 반영해 여행 및 관광 목적 이용자를 겨냥한 셔츠룸을 운영합니다. 제주공항은 휴양지 이미지와 맞물려 편안한 분위기의 라운지를 겸한 셔츠룸을 제공하며, 부산김해공항은 비즈니스 여행객을 위해 업무용 시설과 연계된 셔츠룸을 운영합니다. 이러한 차별화된 서비스는 이용 목적에 따라 최적의 선택지를 제공합니다.</p>
     </section>
 
-    <!-- 특징 카드 -->
-    <section class="section-gap">
-      <div class="container">
-        <h2>이런 점이 특별해</h2>
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
-          <div class="card">
-            <h3>🛬 24시 무중단</h3>
-            <p>심야 도착? 걱정 마. 인천공항 셔츠룸 대부분 24시간 운영해. 빨간눈 비행기 타고 도착해서 바로 가도 OK. 나도 새벽 3시에 갔는데 완전 친절하더라.</p>
-          </div>
-          <div class="card">
-            <h3>🚗 셔틀 픽업</h3>
-            <p>공항에서 차로 5분 거리인데, 픽업해주는 곳도 있어. 택시 타면 기본요금 나오는데 전화해서 픽업 요청하면 그 돈 아낄 수 있음. 꿀팁이지?</p>
-          </div>
-          <div class="card">
-            <h3>💎 가성비 끝판왕</h3>
-            <p>서울 강남 셔츠룸이랑 비교하면 반값이야. 같은 퀄리티에 가격은 절반. 내 돈 아깝지 않았음. 여기서 한 번 가보면 다른 데 못 가.</p>
-          </div>
-          <div class="card">
-            <h3>👥 아가씨 센스</h3>
-            <p>솔직히 서비스가 제일 중요하지. 공항 셔츠룸 아가씨들 손님이 대부분 여행객인 걸 잘 알아서 분위기 메이킹에 진심이야. 지루할 틈이 없음.</p>
-          </div>
-        </div>
-      </div>
+    <section class="t-box-d2b4">
+      <h2>이용 흐름과 단계별 체크리스트</h2>
+      <p>셔츠룸 이용은 일반적으로 사전 예약 → 현장 확인 → 이용 → 결제(또는 회원제) 순으로 진행됩니다. 사전 예약 단계에서는 이용 일시와 인원 수를 입력하고, 필요 시 추가 서비스(드라이클리닝, 프린팅 등)를 선택합니다. 예약 확인서는 모바일 앱 또는 QR코드 형태로 제공되므로, 현장에서 스캔만으로 접근이 가능합니다.</p>
+      <p>현장 확인 단계에서는 예약 번호와 신분증을 제시하고, 셔츠룸 내부의 설비(샤워, 탈의실, 옷걸이, 거울, 전기 콘센트) 사용 여부를 확인합니다. 이용 후 결제 단계에서는 현금, 카드, 혹은 멤버십 포인트를 통해 비용을 정산합니다. 이때 영수증을 보관하면 추후 환불이나 멤버십 적립에 활용할 수 있습니다.</p>
     </section>
 
-    <!-- 실제 경험담 (브로 톤) -->
-    <section class="section-gap">
-      <div class="container">
-        <h2>브로의 실제 썰</h2>
-        <div class="card" style="border-color:#ff3b6f;">
-          <p>“처음엔 좀 쫄렸어. 근데 문 열고 들어가니까 인테리어부터 맘에 들고, 매니저 형이 ‘편하게 있어요’ 하면서 음료 떠주더라고. 한 시간 동안 수다 떨고 나니까 스트레스 싹 풀렸음. 그날 밤 비행기에서 개꿀잼.”</p>
-          <p style="text-align:right;">— <strong>김브로</strong> (인천공항 셔츠룸 첫 방문 후기)</p>
-        </div>
-        <div class="card">
-          <p>“전화 예약하고 갔는데 웰컴드링크에 과일까지 준비되어 있더라. 이런 건 서울에서도 못 본 서비스인데? 게다가 공항에서 무료셔틀 타고 오니까 교통비도 아꼈다. 다음에 또 올 의사 200%.”</p>
-          <p style="text-align:right;">— <strong>이형</strong> (단골 예약러)</p>
-        </div>
-      </div>
+    <section class="t-box-d2b4">
+      <h2>조건별 적합성 평가 기준</h2>
+      <p>1) <strong>인원 규모</strong> – 단체 여행이나 비즈니스 팀이 동시에 이용할 경우, 대형 셔츠룸을 선택해야 합니다. 대형 셔츠룸은 다수의 탈의 공간과 개별 샤워 시설을 제공해 혼잡을 최소화합니다.</p>
+      <p>2) <strong>시간대</strong> – 출발 전이나 도착 직후 피크 시간대에는 예약률이 높아 대기 시간이 길어질 수 있습니다. 이때는 비피크 시간대를 목표로 예약하거나, 사전 체크인 서비스를 이용해 대기 시간을 절감할 수 있습니다.</p>
+      <p>3) <strong>목적</strong> – 비즈니스 목적이라면 옷걸이와 전기 콘센트, 프린팅 서비스가 필수입니다. 반면 휴양 목적이라면 휴식용 의자와 간단한 샤워 시설이 우선됩니다.</p>
+      <p>4) <strong>예산</strong> – 프리미엄 라운지 연계 셔츠룸은 고가이지만, 회원제 할인이나 프로모션을 활용하면 비용 효율성을 높일 수 있습니다. 저가 옵션도 충분히 기능을 제공하므로, 서비스 내용과 비용을 비교 분석하는 것이 중요합니다.</p>
     </section>
 
-    <!-- FAQ -->
-    <section class="section-gap">
-      <div class="container">
-        <h2>자주 묻는 질문</h2>
-        <div style="margin-top:2rem;">
-          <div style="border-bottom:1px solid #333; padding:1rem 0;">
-            <h3 style="font-size:1.1rem; color:#ff3b6f;">Q. 예약 안 하고 가도 되나?</h3>
-            <p>되긴 하는데 비추. 공항 근처다 보니 자리가 빨리 찬다. 특히 주말엔 웨이팅 기본이야. <span class="mono">걍 전화해</span> 010-6279-0862. 5분이면 예약 끝.</p>
-          </div>
-          <div style="border-bottom:1px solid #333; padding:1rem 0;">
-            <h3 style="font-size:1.1rem; color:#ff3b6f;">Q. 가격대는 어떻게 되나요?</h3>
-            <p>보통 시간당 15~25만 원 사이. 서비스나 시간에 따라 달라. 정확한 건 전화로 물어보는 게 제일 확실. 근데 다른 지역보다 확실히 저렴한 건 팩트.</p>
-          </div>
-          <div style="border-bottom:1px solid #333; padding:1rem 0;">
-            <h3 style="font-size:1.1rem; color:#ff3b6f;">Q. 여성 혼자 가도 되나?</h3>
-            <p>일부 업소는 여성 손님도 받는데 사전 확인 필수. 대부분 남성 위주 영업이라서. 궁금하면 그냥 전화해서 물어보는 게 빠름. 번호는 공유했잖아?</p>
-          </div>
-          <div style="border-bottom:1px solid #333; padding:1rem 0;">
-            <h3 style="font-size:1.1rem; color:#ff3b6f;">Q. 공항에서 어떻게 가나요?</h3>
-            <p>택시 타면 5~10분, 도보 가능한 곳도 있어. 각 업소마다 픽업 서비스 하는 곳이 많으니 예약할 때 같이 요
+    <section class="t-box-d2b4">
+      <h2>자주 묻는 질문 (FAQ)</h2>
+      <table class="q-wrap-pa5u">
+        <thead>
+          <tr><th>질문</th><th>답변</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>예약 없이 현장에서 바로 이용할 수 있나요?</td>
+            <td>일부 공항은 현장 이용 전용 셔츠룸을 운영하지만, 대다수는 사전 예약이 필수입니다. 예약이 없는 경우 대기 시간이 길어질 수 있으니 사전 확인이 권장됩니다.</td>
+          </tr>
+          <tr>
+            <td>셔츠룸 이용 시간 제한이 있나요?</td>
+            <td>보통 2시간 이내 이용이 권장되며, 연장 이용 시 추가 요금이 부과됩니다. 라운지와 연계된 경우 라운지 이용 시간과 동일하게 적용되는 경우가 많습니다.</td>
+          </tr>
+          <tr>
+            <td>비즈니스 복장을 갈아입을 때 필요한 설비는 무엇인가요?</td>
+            <td>전용 탈의 공간, 대형 옷걸이, 전기 콘센트, 거울, 필요 시 휴대용 다리미와 스팀 청소기가 제공되는 셔츠룸을 선택하면 편리합니다.</td>
+          </tr>
+          <tr>
+            <td>셰프룸 이용시 추가 비용이 발생하나요?</td>
+            <td>기본 이용료에 더해 샤워, 드라이클리닝, 프린팅 등 추가 서비스를 선택하면 별도 요금이 청구됩니다. 서비스별 요금표는 사전 예약 페이지에 명시되어 있습니다.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="t-box-d2b4">
+      <h2>결론 및 활용 팁</h2>
+      <p>공항 셔츠룸은 여행 효율성을 크게 향상시킬 수 있는 핵심 인프라입니다. 특히 비즈니스 여행자는 일정에 맞춘 시간 관리와 복장 유지가 필요하므로, 사전 예약과 서비스 비교를 통해 최적의 셔츠룸을 선택하는 것이 중요합니다. 또한 라운지와 연계된 고급 옵션은 추가 비용이 발생하더라도 전반적인 만족도를 높이는 데 기여합니다.</p>
+      <p>여행 전, 목적지와 일정에 맞는 셔츠룸을 미리 조사하고, 멤버십을 활용해 할인 혜택을 받는 전략을 권장합니다. 이를 통해 불필요한 대기 시간을 최소화하고, 여행 전후의 옷 관리 스트레스를 크게 줄일 수 있습니다.</p>
+    </section>
+  </main>
+
+  <footer class="n-foot-947l">
+    <div class="v-foot-zohj">
+      <p>© 2026 airport-shirt-trend.hardcoreroom.com. All rights reserved.</p>
+      <nav>
+        <ul>
+          <li><a href="/privacy.html">개인정보 처리방침</a></li>
+          <li><a href="/terms.html">이용 약관</a></li>
+          <li><a href="/sitemap.html">사이트맵</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
